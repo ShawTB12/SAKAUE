@@ -1,0 +1,19 @@
+[browser]
+gatherUsageStats = false
+
+[theme]
+primaryColor = "#6C63FF"
+backgroundColor = "#111132"
+secondaryBackgroundColor = "#1E1E46"
+textColor = "#E8F3F6"
+
+[server]
+headless = true
+enableCORS = true
+enableXsrfProtection = true
+
+[runner]
+fastReruns = true
+
+[client]
+showErrorDetails = false 
