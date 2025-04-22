@@ -6,14 +6,6 @@ from personality_diagnosis_app.utils import date_utils, display_utils
 from personality_diagnosis_app.fortune_systems import shichuu_suimei, onmyo_gogyo, shukuyo, western_astrology, animal_fortune, kyusei_kigaku
 import streamlit.components.v1 as components
 
-# ページ設定
-st.set_page_config(
-    page_title="性格診断システム",
-    page_icon="✧",
-    layout="wide",
-    initial_sidebar_state="collapsed"
-)
-
 # カスタムCSS
 def load_css():
     st.markdown("""
