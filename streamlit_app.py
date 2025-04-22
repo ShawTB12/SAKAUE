@@ -1,6 +1,15 @@
 import os
 import sys
 import streamlit as st
+
+# ページ設定 - 必ずStreamlitの最初のコマンドにする
+st.set_page_config(
+    page_title="性格診断システム",
+    page_icon="✧",
+    layout="wide",
+    initial_sidebar_state="collapsed"
+)
+
 import datetime
 import time
 import random
@@ -9,6 +18,7 @@ import streamlit.components.v1 as components
 # personality_diagnosis_appディレクトリをパスに追加
 current_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, current_dir)
+sys.path.insert(0, os.path.join(current_dir, "personality_diagnosis_app"))
 
 # 相対インポートを使用
 try:
@@ -20,14 +30,6 @@ except ImportError as e:
     import subprocess
     result = subprocess.run(['pip', 'list'], capture_output=True, text=True)
     st.code(result.stdout)
-
-# ページ設定
-st.set_page_config(
-    page_title="性格診断システム",
-    page_icon="✧",
-    layout="wide",
-    initial_sidebar_state="collapsed"
-)
 
 # ディレクトリ情報を表示（デバッグ用）
 current_dir = os.path.dirname(os.path.abspath(__file__))
