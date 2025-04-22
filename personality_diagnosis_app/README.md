@@ -12,8 +12,8 @@
 
 ```bash
 # リポジトリをクローン
-git clone https://github.com/あなたのユーザー名/personality-diagnosis-app2.git
-cd personality-diagnosis-app2
+git clone https://github.com/あなたのユーザー名/SAKAUE.git
+cd SAKAUE
 
 # 依存パッケージのインストール
 pip install -r personality_diagnosis_app/requirements.txt
@@ -30,9 +30,9 @@ streamlit run personality_diagnosis_app/app.py
 1. GitHubアカウントを使って[Streamlit Cloud](https://streamlit.io/cloud)にログイン
 2. 「New app」をクリック
 3. リポジトリ、ブランチ、メインファイルパスを設定:
-   - リポジトリ: あなたのユーザー名/personality-diagnosis-app2
+   - リポジトリ: あなたのユーザー名/SAKAUE
    - ブランチ: main
-   - パス: personality_diagnosis_app/app.py
+   - パス: streamlit_app.py
 4. 「Deploy」をクリック
 
 ## 必要環境
