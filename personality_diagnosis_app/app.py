@@ -2,8 +2,8 @@ import streamlit as st
 import datetime
 import time
 import random
-from utils import date_utils, display_utils
-from fortune_systems import shichuu_suimei, onmyo_gogyo, shukuyo, western_astrology, animal_fortune, kyusei_kigaku
+from personality_diagnosis_app.utils import date_utils, display_utils
+from personality_diagnosis_app.fortune_systems import shichuu_suimei, onmyo_gogyo, shukuyo, western_astrology, animal_fortune, kyusei_kigaku
 import streamlit.components.v1 as components
 
 # ページ設定
